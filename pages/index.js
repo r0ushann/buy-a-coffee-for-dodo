@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { ethers } from "ethers";
 import "react-toastify/dist/ReactToastify.css";
 import abi from "../utils/CoffeePortal.json"
+import dodo from "../public/dodo.jpg";
 
 import Head from "next/head";
 
@@ -276,20 +277,27 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
+      
         <title>Buy Me a Coffee</title>
-        <link rel="icon" href="/favicon.ico" />
+        
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold text-blue-600 mb-6">
-          Buy DODO A Coffee
+      <img class="h-100 w-200 flex rounded-full" src="https://imgs.search.brave.com/mIYBPsfQRs8HYWpOHcHQT1Tqt72arQO3y3KmRF6pJtc/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/VFZpUnlUT3RHejZx/bGxMbW1WT3JBSGFF/byZwaWQ9QXBp"></img>
+        <h1 className="text-6xl flex font-bold py-4 text-blue-600 mb-6">
+          Buy Dodo A Coffee
         </h1>
         {/*
          * If there is currentAccount render this form, else render a button to connect wallet
          */}
 
         {currentAccount ? (
-          <div className="w-full max-w-xs sticky top-3 z-50 ">
+           
+         
+          <div className=" w-full max-w-xs sticky top-3 z-50 "  >
+            <div
+           className="bg-scroll bg-morty h-[972px]"
+         >
             <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
               <div className="mb-4">
                 <label
@@ -328,14 +336,15 @@ export default function Home() {
 
               <div className="flex items-left justify-between">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="bg-blue-500 hover:bg-blue-700 text-center text-white font-bold py-4 px-5 rounded focus:outline-none focus:shadow-outline"
                   type="button"
                   onClick={buyCoffee}
                 >
-                  Support $5
+                  Buy Coffee Rs.5/-
                 </button>
               </div>
             </form>
+            </div>
           </div>
         ) : (
           <button
@@ -367,6 +376,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          
           );
         })}
       </main>
@@ -381,6 +391,8 @@ export default function Home() {
         draggable
         pauseOnHover
       />
+      
     </div>
+    
   );
 }
