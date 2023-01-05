@@ -283,7 +283,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-      <img class="h-100 w-200 flex rounded-full" src="https://imgs.search.brave.com/mIYBPsfQRs8HYWpOHcHQT1Tqt72arQO3y3KmRF6pJtc/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/VFZpUnlUT3RHejZx/bGxMbW1WT3JBSGFF/byZwaWQ9QXBp"></img>
+      <img class="h-40 w-60 py-2 flex rounded-full" src="https://imgs.search.brave.com/mIYBPsfQRs8HYWpOHcHQT1Tqt72arQO3y3KmRF6pJtc/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/VFZpUnlUT3RHejZx/bGxMbW1WT3JBSGFF/byZwaWQ9QXBp"></img>
         <h1 className="text-6xl flex font-bold py-4 text-blue-600 mb-6">
           Buy Dodo A Coffee
         </h1>
@@ -298,13 +298,13 @@ export default function Home() {
             <div
            className="bg-scroll bg-morty h-[972px]"
          >
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-2">
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-gray-700 text-m font-bold mb-2"
                   htmlFor="name"
                 >
-                  Name
+                  Let us know your Name!
                 </label>
                 <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -357,8 +357,8 @@ export default function Home() {
 
         {allCoffee.map((coffee, index) => {
           return (
-            <div className="border-l-2 mt-10" key={index}>
-              <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-800 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+            <div className="border-4-2 mt-8" key={index}>
+              <div className="transform transition cursor-pointer hover:-translate-y-2 ml-8 relative flex items-center px-6 py-4 bg-blue-800 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                 {/* <!-- Dot Following the Left Vertical Line --> */}
                 <div className="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
